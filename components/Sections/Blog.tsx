@@ -31,6 +31,7 @@ const Blog: React.FC<Props> = ({ news }) => {
               data-aos-duration="1000"
               data-aos-mirror="true"
               data-aos-once="false"
+              key={newsItem.slug.current}
             >
               <div className="flex justify-between items-center mb-5 text-pry-100">
                 <span className="bg-pry-50 text-pry-100 font-main text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">

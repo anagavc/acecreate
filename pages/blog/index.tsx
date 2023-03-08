@@ -18,7 +18,10 @@ const Blog: React.FC<Props> = ({ blogData }) => {
       <section className="bg-pry-50 flex flex-col py-24 px-8 lg:px-32 gap-2">
         <div className="grid  mx-auto gap-8 lg:grid-cols-2 lg:py-4">
           {blogData.map((newsItem) => (
-            <article className="py-8 px-6 lg:px-12 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+            <article
+              key={newsItem.slug.current}
+              className="py-8 px-6 lg:px-12 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
+            >
               <div className="flex justify-between items-center mb-5 text-pry-100">
                 <span className="bg-pry-50 text-pry-100 font-main text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
                   Tutorial

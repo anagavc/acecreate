@@ -46,7 +46,7 @@ const Testimonials: React.FC<Props> = ({ reviews }) => {
           >
             {reviews.map((review, index) => {
               return (
-                <SwiperSlide>
+                <SwiperSlide key={review._id}>
                   <div
                     className="flex flex-col justify-between h-full w-full bg-pry-100  md:px-10 px-6 py-6 lg:py-14 gap-2 lg:space-y-4 md:space-y-4"
                     key={review._id}

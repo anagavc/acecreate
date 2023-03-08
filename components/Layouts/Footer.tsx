@@ -133,8 +133,10 @@ const Footer = () => {
             ))}
             <div className="flex flex-col  space-y-6 lg:space-y-4">
               <HeadingSix content="Working hours" />
-              {workingHours.map((hour) => (
-                <p className="text-pry-50 font-main text-base">{hour}</p>
+              {workingHours.map((hour, i) => (
+                <p className="text-pry-50 font-main text-base" key={i}>
+                  {hour}
+                </p>
               ))}
 
               <Link
