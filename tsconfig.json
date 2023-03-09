@@ -15,6 +15,15 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "next-sitemap.config.js"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js",
+    "**/*.jsx",
+    "next-sitemap.config.js",
+    "pages/api/contact/enquiry.js",
+    "pages/api/contact/info.js"
+  ],
   "exclude": ["node_modules"]
 }

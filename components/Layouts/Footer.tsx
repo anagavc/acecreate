@@ -146,7 +146,7 @@ const Footer = () => {
                 Book an appointment
               </Link>
               <Link
-                href="tel:+234-9470-843"
+                href="tel:+234-704-9470-843"
                 className="text-pry-50 hover:text-sec-50 transition font-main text-base duration-300"
               >
                 Call Us
