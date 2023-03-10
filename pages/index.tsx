@@ -31,12 +31,8 @@ const Home: React.FC<Props> = ({ reviews, portfolio, blog }) => {
 };
 export const getServerSideProps = async () => {
   const reviews = await client.fetch(`*[_type=="reviews"]`);
-  const portfolio = await client.fetch(
-    `*[_type=="portfolio"]|order(_createdAt desc)[0..4]`
-  );
-  const blog = await client.fetch(
-    `*[_type=="blog"]|order(_createdAt desc)[0..1]`
-  );
+  const portfolio = await client.fetch(`*[_type=="portfolio"]`);
+  const blog = await client.fetch(`*[_type=="blog"]`);
 
   return {
     props: {
