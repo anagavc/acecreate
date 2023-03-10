@@ -15,7 +15,7 @@ type Props = {
   portfolio: PortfolioType[];
   blog: BlogType[];
 };
-const Home: React.FC<Props> = ({ reviews, blog }) => {
+const Home: React.FC<Props> = () => {
   return (
     <>
       <Header />
@@ -23,22 +23,22 @@ const Home: React.FC<Props> = ({ reviews, blog }) => {
       <About />
       <Steps />
       {/* <Portfolio projects={portfolio} /> */}
-      <Testimonials reviews={reviews} />
-      <Blog news={blog} />
+      {/* <Testimonials reviews={reviews} /> */}
+      {/* <Blog news={blog} /> */}
       <GetStarted />
     </>
   );
 };
 export const getServerSideProps = async () => {
-  const reviews = await client.fetch(`*[_type=="reviews"]`);
+  // const reviews = await client.fetch(`*[_type=="reviews"]`);
   // const portfolio = await client.fetch(`*[_type=="portfolio"]`);
-  const blog = await client.fetch(`*[_type=="blog"]`);
+  // const blog = await client.fetch(`*[_type=="blog"]`);
 
   return {
     props: {
-      reviews,
+      // reviews,
       // portfolio,
-      blog,
+      // blog,
     },
   };
 };
