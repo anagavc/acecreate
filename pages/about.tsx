@@ -149,7 +149,7 @@ const About: React.FC<Props> = ({ teamMates }) => {
   );
 };
 
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
   const teamMates = await client.fetch(`*[_type=="team"]`);
   return {
     props: { teamMates },

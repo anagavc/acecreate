@@ -268,7 +268,7 @@ const Contact: React.FC<Props> = ({ portfolio }) => {
     </div>
   );
 };
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
   const portfolio = await client.fetch(
     `*[_type=="portfolio"]|order(_createdAt desc)[0..1]`
   );

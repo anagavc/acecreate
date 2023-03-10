@@ -68,7 +68,7 @@ const Portfolio: React.FC<Props> = ({ projects }) => {
     </div>
   );
 };
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
   const projects = await client.fetch(
     `*[_type=="portfolio"]|order(_createdAt desc)[0..4]`
   );

@@ -68,7 +68,7 @@ const Blog: React.FC<Props> = ({ blogData }) => {
   );
 };
 
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
   const blogData = await client.fetch(`*[_type=="blog"]`);
   return {
     props: { blogData },
