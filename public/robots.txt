@@ -1,0 +1,10 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://acecreate.tech
+
+# Sitemaps
+Sitemap: https://acecreate.tech/sitemap.xml
+Sitemap: https://acecreate.tech/server-sitemap.xml

@@ -20,11 +20,13 @@ const Home: React.FC<Props> = ({ reviews, portfolio, blog }) => {
     <>
       <Header />
       <Services />
-      <About />
-      <Steps />
       <Portfolio projects={portfolio} />
-      <Testimonials reviews={reviews} />
+      <Steps />
+      <About />
+
       <Blog news={blog} />
+      <Testimonials reviews={reviews} />
+
       <GetStarted />
     </>
   );
